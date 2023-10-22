@@ -1,0 +1,225 @@
+$border-radius:0;
+
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+// Modify the Heading 
+h1{
+    
+    font-family: 'Manrope', sans-serif;
+    font-size: 2.5rem;
+    color: #05253C;
+    margin-top: 1.25rem;
+    margin-bottom: 0;
+}
+
+//Modify Input titles
+h4{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 500;
+    color: #05253C;
+    font-size: 1rem;
+}
+
+//Add paddings text area
+.textField{
+    padding: 11.75rem 10rem;
+    margin: 0;
+}
+
+//Modify logo position
+.logo{
+    position: absolute;
+    top: 4.5rem;
+    left: 8.68rem;
+}
+
+//customize the input
+.custom-input {
+    @extend .form-control; // Inherit Bootstrap's form-control styles
+    &:focus{
+        border-top-color: transparent;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: #EBEBEB;
+        box-shadow:none;
+    }
+
+    // Modify input border
+    border-top: 0; 
+    border-left: 0; 
+    border-right: 0;
+    
+    
+    margin: 0;
+    margin-top: 2%;
+    padding: 0;
+    
+}
+
+// customize the submit button
+.button{
+    background-color: #FFDC47;
+    padding: 2.5% 13% ;
+    margin-top: 5%;
+    font-size: 1rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    color: #05253C;
+    border: 0;
+}
+
+//Add hover effect for submit button
+.button:hover {
+    background-color: #05253C; 
+    color: #FFDC47; 
+}
+
+//Modify place holder font
+.custom-input::placeholder {
+    font-size: 0.75rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 500;
+    color: #DBDBDB;
+}
+
+//animate the logo
+.animated-image {
+    transition: transform 0.5s; //Apply a 0.5s transform transition
+}
+
+  .animated-image:hover {
+    transform: scale(1.2); //Scale the image up on hover 
+}
+
+//Modify margins and paddings on the form field
+.formField{
+    margin: 0;
+    margin-top: 6%;  
+    padding: 0;
+}
+
+//Modify margins and paddings on the form field
+.imageField{
+    margin: 0;
+    padding: 0;
+}
+
+//Modify Font and the color of error message
+.error-message {
+    font-size: 0.75rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 500;
+    color: #FF0000;
+}
+
+//Add background image to show on small devices
+.background-image {
+    background-image: url('./Assests/mountains2x.png'); // Replace 'your-image.jpg' with your image path
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 5rem 4rem;    
+}
+.right-align {
+    float: right;
+}
+
+//Media Queries
+
+@media(max-width:767px){
+    h1{
+        text-align: center;
+    }
+    h4{
+        text-align: left;
+    }
+    .buttonField{
+        text-align: center;
+        margin: 1.8rem;
+    }
+    .textField-inner {
+        background-color: #ffffff; /* Background color for the content area */
+        padding: 2rem; /* Add padding to the content area to exclude padding from the box */
+        opacity: 0.9;
+      }
+}
+
+@media (min-width: 768px) {
+    
+    .background-image {
+      display: none; /* Hide the background image on screens with a minimum width of 768px (tablets and larger screens) */
+    }
+   
+}
+
+@media (min-width: 319px) and (max-width: 480px) {
+
+    .textField{
+        padding:5rem 0.5rem;
+        margin: 0;
+    }
+
+    h1{
+        font-size: 1.75rem;
+        text-align: center;
+        padding-bottom: 5%;
+    }
+    .buttonField{
+        text-align: center;
+    }
+    .logo{
+        left: 12%;
+        top: 5%;
+    }
+
+}
+
+@media (min-width: 481px) and (max-width: 850px) {
+    
+    .textField{
+        padding:8rem 4rem;
+        margin: 0;
+    }
+    h1{
+    font-size: 2rem;
+    }
+    h4{
+    font-size: 0.8rem;
+    }
+    .custom-input::placeholder {
+        font-size: 0.6rem;
+    }
+    .logo{
+        left: 5%;
+        top: 2%;
+    }
+    .button{
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 851px) and (max-width: 1200px) {
+
+     .textField{
+        padding:8rem 6rem;
+        margin: 0;
+    }
+    h1{
+    font-size: 2rem;
+    }
+    h4{
+    font-size: 0.9rem;
+    }
+    .custom-input::placeholder {
+        font-size: 0.7rem;
+    }
+    .logo{
+        left: 6%;
+        top: 3%;
+    }
+    .button{
+        font-size: 0.9rem;
+    }
+}

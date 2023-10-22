@@ -1,0 +1,162 @@
+<!-- Method: Superstar -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Preconnect to Google Fonts API -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Preconnect to Google Fonts Content Delivery Network with Cross-Origin attribute -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Link to load the Manrope font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap" rel="stylesheet">
+    <!-- Link to load Plus Jakarta Sans fonts with different weights from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600&display=swap" rel="stylesheet"> 
+    <!-- Character encoding declaration -->
+    <meta charset="UTF-8">
+    <!-- Viewport configuration for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage -->
+    <link rel="icon" href="./Assests/favi.png" type="image/x-icon">
+    <title>Smashy Design</title>
+    <!-- Link to an external CSS file for styling -->
+    <link href="./main.css" rel="stylesheet">
+    
+</head>
+<body>
+  <!-- Main container with full width -->
+  <div class="col-lg-12 mr-0">
+    <!-- Company Logo Field -->
+    <div class="logoarea">
+      <!-- Link to the website home page -->
+      <a href="https://smashy.design/">
+      <!-- Company logo -->
+      <img src="./Assests/Logo.svg" class="logo animated-image" alt="logo" loading="lazy">
+      </a>
+    </div>
+
+    <!-- Row with two columns, reversed on small screens -->
+    <div class="row flex-sm-row-reverse g-5 py-3">
+
+      <!-- Image column hide on smaller screen-->
+      <div class="imageField col-sm-6 col-lg-5 d-none d-md-block">
+
+         <!-- Image of mountains -->
+        <img src="./Assests/mountains2x.png" class="d-block mx-lg-auto img-fluid" alt="Mountains" loading="lazy">
+      </div>
+
+      <!-- Text column hide on smaller screen-->
+      <div class="textField col-sm-6 col-lg-7 align-items-center d-none d-md-block">
+
+        <!-- Heading -->
+        <h1>We'd love to hear from you.</h1>
+
+        <!--Form for large screen-->
+        <form id="form1">
+
+          <!-- First Name input field -->
+          <div class="formField container">
+            <h4>First Name*</h4>
+            <div class="form-group">
+              <input id="firstName1" type="text" class="form-control custom-input" placeholder="Please type your first name">
+              <span id="first-name1-error" class="error-message right-align"></span>
+            </div>
+          </div>
+
+          <!-- Last Name input field -->
+          <div class="formField container">
+            <h4>Last Name*</h4>
+            <div class="form-group">
+              <input id="lastName1" type="text" class="form-control custom-input" placeholder="Please type your last name">
+              <span id="last-name1-error" class="error-message right-align"></span>
+            </div>
+          </div>
+
+          <!-- Email Address input field -->
+          <div class="formField container">
+            <h4>Email Address*</h4>
+            <div class="form-group">
+              <input id="email1" type="email" class="form-control custom-input" placeholder="Please type your email address">
+              <span id="email1-error" class="error-message right-align"></span>
+            </div>
+          </div>
+          
+          <!-- Address input field -->
+          <div class="formField container">
+            <h4>Address*</h4>
+            <div class="form-group">
+              <input id="address1" type="text" class="form-control custom-input" placeholder="Please type your Address*">
+              <span id="address1-error" class="error-message right-align"></span>
+            </div>
+          </div>
+
+          <!-- Submit button -->
+          <div class="buttonField">
+            <button type="submit" class="btn btn-primary button">Submit</button>
+          </div>
+        </form>
+      </div> 
+
+      <!--  Column to Show on smaller screen -->
+      <div class="container background-image d-block d-md-none">
+
+        <!-- Text column -->
+        <div class="textField col-12 align-items-center">
+
+          <!-- Divison to select area for add background color without the padding -->
+          <div class="textField-inner">
+
+          <!-- Heading -->
+          <h1>We'd love to hear from you.</h1>
+          
+          <!--Form for small screen-->
+          <form id="form2">
+
+            <!-- First Name input field -->
+            <div class="formField container">
+              <h4>First Name*</h4>
+              <div class="form-group">
+                <input id="firstName2" type="text" class="form-control custom-input" placeholder="Please type your first name">
+                <span id="first-name2-error" class="error-message right-align"></span>
+              </div>
+            </div>
+  
+            <!-- Last Name input field -->
+            <div class="formField container">
+              <h4>Last Name*</h4>
+              <div class="form-group">
+                <input id="lastName2" type="text" class="form-control custom-input" placeholder="Please type your last name">
+                <span id="last-name2-error" class="error-message right-align"></span>
+              </div>
+            </div>
+  
+            <!-- Email Address input field -->
+            <div class="formField container">
+              <h4>Email Address*</h4>
+              <div class="form-group">
+                <input id="email2" type="email" class="form-control custom-input" placeholder="Please type your email address">
+                <span id="email2-error" class="error-message right-align"></span>
+              </div>
+            </div>
+            
+            <!-- Address input field -->
+            <div class="formField container">
+              <h4>Address*</h4>
+              <div class="form-group">
+                <input id="address2" type="text" class="form-control custom-input" placeholder="Please type your Address*">
+                <span id="address2-error" class="error-message right-align"></span>
+              </div>
+            </div>
+  
+            <!-- Submit button -->
+            <div class="buttonField">
+              <button type="submit" class="btn btn-primary button">Submit</button>
+            </div>
+          </form>
+          </div>
+        </div> 
+      </div>
+    </div>
+  </div>
+</div>
+<script src="validation.js"></script>
+</body>
+</html>
